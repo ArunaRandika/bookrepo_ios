@@ -11,6 +11,13 @@
 		94388ACD29C9C77100A1FA38 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94388ACC29C9C77100A1FA38 /* ContentView.swift */; };
 		94388ACF29C9C77100A1FA38 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 94388ACE29C9C77100A1FA38 /* Assets.xcassets */; };
 		94388AD229C9C77100A1FA38 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 94388AD129C9C77100A1FA38 /* Preview Assets.xcassets */; };
+		94388AD929C9C84700A1FA38 /* MyBooksView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94388AD829C9C84700A1FA38 /* MyBooksView.swift */; };
+		94388ADB29C9C85C00A1FA38 /* ToReadView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94388ADA29C9C85C00A1FA38 /* ToReadView.swift */; };
+		94388ADD29C9C8DD00A1FA38 /* DiscoverView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94388ADC29C9C8DD00A1FA38 /* DiscoverView.swift */; };
+		94388AE029C9D40500A1FA38 /* Book.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94388ADF29C9D40500A1FA38 /* Book.swift */; };
+		94388AE329C9DED800A1FA38 /* SelectedBookView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94388AE229C9DED800A1FA38 /* SelectedBookView.swift */; };
+		94388AE729CAC22B00A1FA38 /* BooksModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 94388AE529CAC22B00A1FA38 /* BooksModel.xcdatamodeld */; };
+		94388AE929CAC67E00A1FA38 /* Repository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94388AE829CAC67E00A1FA38 /* Repository.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +26,13 @@
 		94388ACC29C9C77100A1FA38 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		94388ACE29C9C77100A1FA38 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		94388AD129C9C77100A1FA38 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		94388AD829C9C84700A1FA38 /* MyBooksView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyBooksView.swift; sourceTree = "<group>"; };
+		94388ADA29C9C85C00A1FA38 /* ToReadView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToReadView.swift; sourceTree = "<group>"; };
+		94388ADC29C9C8DD00A1FA38 /* DiscoverView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiscoverView.swift; sourceTree = "<group>"; };
+		94388ADF29C9D40500A1FA38 /* Book.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Book.swift; sourceTree = "<group>"; };
+		94388AE229C9DED800A1FA38 /* SelectedBookView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectedBookView.swift; sourceTree = "<group>"; };
+		94388AE629CAC22B00A1FA38 /* BooksModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = BooksModel.xcdatamodel; sourceTree = "<group>"; };
+		94388AE829CAC67E00A1FA38 /* Repository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Repository.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,6 +65,9 @@
 		94388AC929C9C77100A1FA38 /* BookRepository */ = {
 			isa = PBXGroup;
 			children = (
+				94388AE429CAC20C00A1FA38 /* Repository */,
+				94388AE129C9DEA500A1FA38 /* View */,
+				94388ADE29C9D3DB00A1FA38 /* Model */,
 				94388ACA29C9C77100A1FA38 /* BookRepositoryApp.swift */,
 				94388ACC29C9C77100A1FA38 /* ContentView.swift */,
 				94388ACE29C9C77100A1FA38 /* Assets.xcassets */,
@@ -65,6 +82,34 @@
 				94388AD129C9C77100A1FA38 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		94388ADE29C9D3DB00A1FA38 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				94388ADF29C9D40500A1FA38 /* Book.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		94388AE129C9DEA500A1FA38 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				94388AD829C9C84700A1FA38 /* MyBooksView.swift */,
+				94388ADA29C9C85C00A1FA38 /* ToReadView.swift */,
+				94388ADC29C9C8DD00A1FA38 /* DiscoverView.swift */,
+				94388AE229C9DED800A1FA38 /* SelectedBookView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		94388AE429CAC20C00A1FA38 /* Repository */ = {
+			isa = PBXGroup;
+			children = (
+				94388AE529CAC22B00A1FA38 /* BooksModel.xcdatamodeld */,
+				94388AE829CAC67E00A1FA38 /* Repository.swift */,
+			);
+			path = Repository;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -138,7 +183,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				94388ACD29C9C77100A1FA38 /* ContentView.swift in Sources */,
+				94388ADB29C9C85C00A1FA38 /* ToReadView.swift in Sources */,
+				94388AE029C9D40500A1FA38 /* Book.swift in Sources */,
+				94388ADD29C9C8DD00A1FA38 /* DiscoverView.swift in Sources */,
+				94388AD929C9C84700A1FA38 /* MyBooksView.swift in Sources */,
+				94388AE329C9DED800A1FA38 /* SelectedBookView.swift in Sources */,
+				94388AE729CAC22B00A1FA38 /* BooksModel.xcdatamodeld in Sources */,
 				94388ACB29C9C77100A1FA38 /* BookRepositoryApp.swift in Sources */,
+				94388AE929CAC67E00A1FA38 /* Repository.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -339,6 +391,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		94388AE529CAC22B00A1FA38 /* BooksModel.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				94388AE629CAC22B00A1FA38 /* BooksModel.xcdatamodel */,
+			);
+			currentVersion = 94388AE629CAC22B00A1FA38 /* BooksModel.xcdatamodel */;
+			path = BooksModel.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 94388ABF29C9C77100A1FA38 /* Project object */;
 }

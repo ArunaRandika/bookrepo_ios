@@ -8,14 +8,25 @@
 import SwiftUI
 
 struct ContentView: View {
+    
+    @StateObject var bookRepo = BookRepo()
+    
     var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundColor(.accentColor)
-            Text("Hello, world!")
+        TabView {
+            DiscoverView()
+                .tabItem {
+                    Label("", systemImage: "globe.americas")
+                }
+            MyBooksView(bookRepo: bookRepo)
+                .tabItem {
+                    Label("", systemImage: "heart")
+                }
+            ToReadView()
+                .tabItem {
+                    Label("", systemImage: "book")
+                }
+          
         }
-        .padding()
     }
 }
 
@@ -24,3 +35,4 @@ struct ContentView_Previews: PreviewProvider {
         ContentView()
     }
 }
+
